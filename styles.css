@@ -1,0 +1,274 @@
+
+
+html{
+	width:100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#screen{
+	float: right;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 50px;
+	z-index: -1;
+}
+
+.screen-items{
+	width: 30px;
+	height: 30px;
+	background-color: red;
+	margin: 30px;
+}
+
+#project-shortcut{
+	position: relative;
+	left: 85%;
+}
+
+#contacts-shortcut{
+	position: relative;
+	left: 70%;
+}
+
+#drawings-shortcut{
+	position: relative;
+	left: 80%;
+}
+
+#about-shortcut{
+	position: relative;
+	left: 82%;
+}
+
+#education-shortcut{
+	position: relative;
+	left: 75%;
+}
+
+.setting-items{
+	float: left;
+	color: white;
+	position: relative;
+}
+
+#restart{
+	cursor: pointer;
+	top: 150px;
+	color: white;
+}
+
+.portfolio-item{
+	width: 40%;
+	padding: 20px;
+	color: white;
+	text-align: center;
+	float: left;
+	position: relative;
+}
+
+.thumbnail{
+	width:150px;
+	height: 100px;
+}
+
+#contacts{
+	position: absolute;
+	text-align: center;
+}
+
+#contact-heading{
+	color: white;
+}
+
+#contact-body{
+	color: white;
+	padding-left: 40px;
+	padding-right: 40px;
+	font-size: 18px;
+}
+
+#about{
+	text-align: center;
+}
+
+#about-heading{
+	color: white;
+}
+
+#about-body{
+	margin-left: 20px;
+	margin-right: 5px;
+	text-align: left;
+	color: white;
+}
+
+#education{
+	text-align: center;
+}
+
+#education-heading{
+	color: white;
+}
+
+#education-body{
+	margin-left: 20px;
+	margin-right: 5px;
+	text-align: left;
+	color: white;
+}
+
+.pop-up{
+	width: 600px;
+	height: 400px;
+	color: black;
+	position: absolute;
+	border: 1px solid;
+	display: none;
+	top: 50px;
+}
+.container{
+	width:100%;
+	height: 360px;
+	poisiton: absolute;
+	background-color: grey;
+}
+
+.item-container{
+	width: 100%;
+	height: 360px;
+	position: relative;
+	overflow: auto;
+}
+
+.popup-header{
+	position: sticky;
+	top: 0px;
+	height: 30px;
+	width: 100%;
+	color: white;
+	background-color: black;
+	text-align: center;
+	padding-top: 10px;
+	display: inline-block;
+}
+
+.pop-up:active{
+	z-index: 2;
+} 
+
+.manager-items{
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	background-color: red;
+	float: left;
+	bottom: 20px;
+	position: relative;
+	text-align: center;
+	margin-left: 14%;
+}
+
+.white{
+	color: white;
+}
+
+
+#taskbar{
+	z-index: 3;
+	width:100%;
+	height:50px;
+	background-color:grey;
+	position: absolute;
+	float: right;
+	left: 0px;
+	top: 0px;
+	padding-left: 20px;
+}
+
+.task-item{
+	position: absolute;
+	color:white;
+	padding-bottom: 5px;
+	padding-left: 3px;
+	
+}
+
+.sub-title{
+	color: orange;
+	position: relative;
+	top: 30px;
+	right: 8px;
+	text-align: center;
+}
+
+#settings{
+	width: 10%;
+	text-align:center;
+	position: absolute;
+}
+
+#userProfile{
+	right: 10%;
+	padding-right: 50px;
+	position: relative;
+	float: left;
+	width: 300px;
+	left: 15%;
+}
+
+
+.dropdown{
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content{
+	padding-right: 50px;
+	width: 100%;
+	display: none;
+	position: absolute;
+	background-color: grey;
+	z-index: 3;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+
+#manager{
+	text-align: center;
+	position: fixed;
+	right: 0px;
+	width: 100%;
+	bottom: 0px;
+	height: 50px;
+	background-color: grey;
+}
+
+.background{
+	cursor: pointer;
+	float: left;
+	padding: 2px;
+	margin: 2px;
+	width: 30px;
+	height: 30px;
+}
+
+.close{
+	display: flex;
+	justify-content: end;
+	float: right;
+	margin-right: 20px;
+	padding: 5px;
+	position: relative;
+	bottom: 5px;
+	border: 1px solid;
+}
+
+.close:hover{
+	cursor: pointer;
+}

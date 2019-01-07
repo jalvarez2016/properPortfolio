@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Jason Alvarez | Portfolio</title>
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<div id="taskbar">
+	<div class="dropdown task-item" id="settings">
+		<p>Settings</p>
+		<div class="dropdown-content">
+			<div class="setting-items" id="background-color">
+				<p>Background Color</p>
+				<div role="button" class="background" id="black" style="background-color: black;" onclick="changeColor(0)"></div>
+				<div role="button" class="background" id="white" style="background-color: white;" onclick="changeColor(1)"></div>
+				<div role="button" class="background" id="blue" style="background-color: blue;" onclick="changeColor(2)"></div>
+				<div role="button" class="background" id="yellow" style="background-color: yellow;" onclick="changeColor(3)"></div>	
+			</div>
+			<hr>
+			<p id="restart" onClick="window.location.reload()">Restart</p>
+		</div>
+	</div>
+	<div class="dropdown task-item" id="userProfile">
+		<p>Customer Service</p>
+		<div class="dropdown-content" id="project">
+			<a class="white" target="_blank" href="https://www.linkedin.com/in/jason-a-54a534156/"><p>Linked In</p></a>
+			<hr>
+			<a class="white" href="#" onclick="showProjects()"><p>Projects</p></a>
+			<hr>
+			<p>E-mail : Jasonalvarezcoraiza@gmail.com</p>
+		</div>
+	</div>
+</div>
+
+<div id="screen">
+	<div class="screen-items" id="project-shortcut" onclick="showProjects()">
+		<p class="sub-title">Projects</p>
+	</div>
+	<div class="screen-items" id="contacts-shortcut" onclick="showContacts()">
+		<p class="sub-title">Contact</p>
+	</div>
+	<div class="screen-items" id="drawings-shortcut" onclick="showDrawings()">
+		<p class="sub-title">Drawings</p>
+	</div>
+	<div class="screen-items" id="about-shortcut" onclick="showAbout()">
+		<p class="sub-title">About</p>
+	</div>
+	<div class="screen-items" id="education-shortcut" onclick="showEducation()">
+		<p class="sub-title">Education</p>
+	</div>
+</div>
+
+
+<div id="manager">
+	<div class="manager-items" id="project-icon" onclick="showProjects()"></div>
+	<div class="manager-items" id="contacts-icon" onclick="showContacts()"></div>
+	<div class="manager-items" id="drawings-icon" onclick="showDrawings()"></div>
+	<div class="manager-items" id="about-icon" onclick="showAbout()"></div>
+	<div class="manager-items" id="education-icon" onclick="showEducation()"></div>
+</div>
+
+<div class="pop-up" id="projects">
+	
+	<div id="projectsheader" class="popup-header">Projects
+		<div class="close" onclick="showProjects()">X</div>
+	</div>
+	
+	  <div class="container">
+	     <div class="item-container">
+                <div class="portfolio-item">  
+                        <h4 class="text-center">Hangman</h4>
+                        <img class="thumbnail" src="https://previews.123rf.com/images/pixelrobot/pixelrobot1504/pixelrobot150401481/38286143-Old-West-Hang-Mans-Noose-Isolated-on-White-Background--Stock-Photo.jpg" class="img-responsive" alt="Cabin">
+                        <div class="caption">                 
+                            <a target="_blank" href="https://jalvarez2016.github.io/unit13HangmanStarterCode/"> 
+                                <button class="btn btn-outline"> Live Site </button>
+                            </a> 
+                            <a target="_blank" href="https://github.com/jalvarez2016/unit13HangmanStarterCode"> 
+                                <button class="btn btn-outline"> Source </button>
+                            </a>  
+                        </div> 
+                </div>         
+
+
+                <div class="portfolio-item">   
+                        <h4 class="text-center">Catchn' Red Dots</h4>
+                        <img class="thumbnail" src="http://www.turtleskin.com/media/catalog/product/cache/1/image/1200x/040ec09b1e35df139433887a97daa66f/0/0/0000685_turtleskin-workwear-mechanics-gloves-ts-300.jpeg" class="img-responsive" alt="Cabin">
+                        <div class="caption text-center">                 
+                            <a target="_blank" href="https://jalvarez2016.github.io/space-invader-game/"> 
+                                <button class="btn btn-outline"> Live Site </button>
+                            </a> 
+                            <a target="_blank" href="https://github.com/jalvarez2016/space-invader-game"> 
+                                <button class="btn btn-outline"> Source </button>
+                            </a>  
+                        </div>          
+                </div>
+
+
+                <div class="portfolio-item"> 
+                        <h4 class="text-center">Littering thing</h4>
+                        <img class="thumbnail" src="http://www.factsrider.com/wp-content/uploads/2015/01/littering.jpg" alt="Cabin">
+                        <div class="caption text-center">                 
+                            <a target="_blank" href="https://jalvarez2016.github.io/Change-Project-littering-/"> 
+                                <button class="btn btn-outline"> Live Site </button>
+                            </a> 
+                            <a target="_blank" href="https://github.com/jalvarez2016/Change-Project-littering-"> 
+                                <button class="btn btn-outline"> Source </button>
+                            </a>  
+                        </div>         
+                </div>
+
+	
+                <div class="portfolio-item">   
+                        <h4 class="text-center">Rock Paper Scissors</h4>
+                        <img class="thumbnail" src="http://static1.squarespace.com/static/595543f6b11be1695b0fdb29/t/59555414cd0f68572370bb64/1498764324553/DFP-RockPaperScissors-Black.png?format=1000w" alt="Cabin">
+                        <div class="caption text-center">                 
+                            <a target="_blank" href="https://jalvarez2016.github.io/advanced_rockpaperscissors_startercode/"> 
+                                <button class="btn btn-outline"> Live Site </button>
+                            </a> 
+                            <a target="_blank" href="https://github.com/jalvarez2016/advanced_rockpaperscissors_startercode"> 
+                                <button class="btn btn-outline"> Source </button>
+                            </a>  
+                        </div>        
+                </div>
+
+
+                <div class="portfolio-item">  
+                        <h4 class="text-center">PigLatinizer</h4>
+                        <img class="thumbnail" src="https://cdn.iconscout.com/public/images/icon/free/png-512/pig-face-sus-wild-animal-food-3088363eeae1bedf-512x512.png" class="img-responsive" alt="Cabin">
+                        <div class="caption text-center">                 
+                            <a target="_blank" href="https://jalvarez2016.github.io/piglatinizer/"> 
+                                <button class="btn btn-outline"> Live Site </button>
+                            </a> 
+                            <a target="_blank" href="https://github.com/jalvarez2016/piglatinizer"> 
+                                <button class="btn btn-outline"> Source </button>
+                            </a>  
+                        </div>        
+                </div>
+
+                <div class="portfolio-item">     
+                        <h4 class="text-center">Playlist</h4>
+                        <img class="thumbnail" src="#">
+                        <div class="caption text-center">                 
+                            <a target="_blank" href="https://jalvarez2016.github.io/playlist/"> 
+                                <button class="btn btn-outline"> Live Site </button>
+                            </a> 
+                            <a target="_blank" href="https://github.com/jalvarez2016/piglatinizer"> 
+                                <button class="btn btn-outline"> Source </button>
+                            </a>  
+                        </div>        
+                </div>
+	    </div>
+	</div>
+</div>
+
+<div class="pop-up" id="contacts">
+	<div id="contactsheader" class="popup-header">Contacts
+		<div class="close" onclick="showContacts()">X</div>
+	</div>
+		<div class="container">
+			<div class="item-container">
+				<div id="contact-heading">
+					<h1> Hello there, my name is <u>Jason</u></h1>
+				</div>
+				<br>
+				<div id="contact-body">
+					<p>I am an aspiring full stack developer with knowledge in <b>Html</b>, <b>CSS</b>, <b>jQuery</b>, and <b>Javascript</b> for building responsive web applications. I am also capable of proforming <b>api request</b> for said applications. In addition to this, I know <b>Boostrap</b> and how to utilize a <b>database</b>.</p>
+					<p> You can see some of my work in the projects tab. Just click on the shortcut called projects.</p>
+					<p>I'd like to give a shout out for some of my work experience. I am eternally thankful to <b>ATTCK</b> for giving me my first intership and helping me better understand the industry. If you need a website built, they're the ones to go to.</p>
+					<br>
+					<p> Anyway, here is my contact info</p>
+					<a class="white" target="_blank" href="https://www.linkedin.com/in/jason-a-54a534156/"><p>Linked In</p></a>
+					<hr>
+					<a class="white" href="#" onclick="showProjects()"><p>Projects</p></a>
+					<hr>
+					<p>E-mail : Jasonalvarezcoraiza@gmail.com</p>
+				</div>
+			</div>
+	</div>
+</div>
+
+<div class="pop-up" id="drawings">
+	<div id="drawingsheader" class="popup-header">Drawings
+		<div class="close" onclick="showDrawings()">X</div>
+	</div>
+		<div class="container">
+			<div class="item-container">
+
+			</div>
+		</div>
+</div>
+
+<div class="pop-up" id="about">
+	<div id="aboutheader" class="popup-header">About
+		<div class="close" onclick="showAbout()">X</div>
+	</div>
+		<div class="container">
+			<div class="item-container">
+				<div id="about-heading">
+					<h1>Hello There</h1>
+				</div>
+				<div id="about-body">
+					<h2>About me</h2>
+						<p>If you haven't read the contact tab, it gives a quick run down of who I am and what I know. In case you havent, allow me to reiterate that I know <b>HTML</b>, <b>CSS</b>, <b>Jaavascript</b> and utilize them to create responsive web application. I am also aware as to how to preform <b>api requests</b>, <b>utilize databases</b>, and use <b>boostrap</b>.</p>
+						<p> I learned the majority of these skills through a program currently called <b>CodeNation</b>, but was called ScriptEd at the time I joined. They are an organization that helps children in school learn how to code. I highly reccomend that you donate to them if you have the time because it's a very efficent program that has greatly contributed to my growth as a developer.</p>
+					<br>
+					<h2>About this project/website</h2>
+						<p> This whole project was done primarily offline. So no libraries were used, like jQuery (which was REALLY hard since I learned Javascript primarily through jQuery). Additionally, this meant that I was unable to use github to store my code. I also used notepad to write code by naming the files .html and such, just to make it more challenge for myself.</p>
+						<p> There are bits of this website that required looking up some questions I had. One of them is some javascript that lets you drag these tabs around(why not try it out!).</p>
+						<p>This project was primarily inspired by a website I saw on awwwards (a website with other websites where they get the chance to win recognition from a lot of people. This website is meant to ressemble a macOS interface with the taskbar (I think that's what it's called) on top and shortcuts on the screen, with shortcuts on the bootom.</p>
+				</div>
+			</div>
+
+		</div>
+</div>
+
+<div class="pop-up" id="education">
+	<div id="educationheader"  class="popup-header">Education
+		<div class="close" onclick="showEducation()">X</div>
+	</div>
+		<div class="container">
+			<div class="item-container">
+				<div id="education-heading">
+					<h1>My grades</h1>
+				</div>
+				<div id="education-body">
+					<h2> Highschool : 2016-2020 </h2>
+						<p> About a 3.3 Gpa </p>
+				</div>
+			</div>
+
+		</div>
+</div>
+
+
+<script src="script.js"></script>
+
+</html>
