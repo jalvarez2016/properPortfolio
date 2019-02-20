@@ -55,11 +55,21 @@
 
 
 <div id="manager">
-	<div class="manager-items" id="project-icon" onclick="showProjects()"></div>
-	<div class="manager-items" id="contacts-icon" onclick="showContacts()"></div>
-	<div class="manager-items" id="drawings-icon" onclick="showDrawings()"></div>
-	<div class="manager-items" id="about-icon" onclick="showAbout()"></div>
-	<div class="manager-items" id="education-icon" onclick="showEducation()"></div>
+	<div class="manager-items" id="project-icon" onclick="showProjects()">
+		<p class="manager-text">Projects</p>
+	</div>
+	<div class="manager-items" id="contacts-icon" onclick="showContacts()">
+		<p class="manager-text">Contacts</p>
+	</div>
+	<div class="manager-items" id="drawings-icon" onclick="showDrawings()">
+		<p class="manager-text">Drawings</p>
+	</div>
+	<div class="manager-items" id="about-icon" onclick="showAbout()">
+		<p id="about-manager" class="manager-text">About</p>
+	</div>
+	<div class="manager-items" id="education-icon" onclick="showEducation()">
+		<p class="manager-text">Education</p>
+	</div>
 </div>
 
 <div class="pop-up" id="projects">
@@ -163,6 +173,7 @@
 			<div class="item-container">
 				<div id="contact-heading">
 					<h1> Hello there, my name is <u>Jason</u></h1>
+					<img id="headshot" src="./imgs/headshot.jpg">
 				</div>
 				<br>
 				<div id="contact-body">
@@ -200,6 +211,7 @@
 			<div class="item-container">
 				<div id="about-heading">
 					<h1>Hello There</h1>
+					<img id="headshot" src="./imgs/headshot.jpg">
 				</div>
 				<div id="about-body">
 					<h2>About me</h2>

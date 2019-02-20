@@ -262,7 +262,7 @@ html{
 	display: flex;
 	justify-content: end;
 	float: right;
-	margin-right: 20px;
+	margin-right: 5px;
 	padding: 5px;
 	position: relative;
 	bottom: 5px;
@@ -271,4 +271,20 @@ html{
 
 .close:hover{
 	cursor: pointer;
+}
+
+#headshot{
+	border-radius: 50%;
+	width: 40%
+}
+
+.manager-text{
+	padding-top: 50%;
+	position: relative;
+	right: 10px;
+	
+}
+
+#about-manager{
+	right: 4px;
 }
