@@ -16,9 +16,8 @@ html{
 }
 
 .screen-items{
-	width: 30px;
-	height: 30px;
-	background-color: red;
+	width: 40px;
+	height: 40px;
 	margin: 30px;
 }
 
@@ -45,6 +44,11 @@ html{
 #education-shortcut{
 	position: relative;
 	left: 75%;
+}
+
+.manager-image{
+	width: 100%;
+	height: 100%;
 }
 
 .setting-items{
@@ -160,9 +164,8 @@ html{
 
 .manager-items{
 	cursor: pointer;
-	width: 30px;
-	height: 30px;
-	background-color: red;
+	width: 40px;
+	height: 40px;
 	float: left;
 	bottom: 20px;
 	position: relative;
@@ -198,7 +201,7 @@ html{
 .sub-title{
 	color: orange;
 	position: relative;
-	top: 30px;
+	bottom: 20px;
 	right: 8px;
 	text-align: center;
 }
@@ -246,7 +249,7 @@ html{
 	width: 100%;
 	bottom: 0px;
 	height: 50px;
-	background-color: grey;
+	background: linear-gradient(transparent, grey);
 }
 
 .background{
@@ -279,12 +282,17 @@ html{
 }
 
 .manager-text{
-	padding-top: 50%;
 	position: relative;
+	bottom: 20px;
 	right: 10px;
+	
 	
 }
 
 #about-manager{
 	right: 4px;
+}
+
+#about-screen{
+	right: 1px;
 }
