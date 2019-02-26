@@ -1,8 +1,7 @@
 
 console.log("hello world");
-var colors = ["black", "white", "blue", "yellow"];
+var colors = ["white", "blue", "yellow"];
 
-var black = document.getElementById('black');
 var white = document.getElementById('white');
 var yellow = document.getElementById('yellow');
 var blue = document.getElementById('blue');
