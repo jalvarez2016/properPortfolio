@@ -297,3 +297,25 @@ html{
 #about-screen{
 	right: 1px;
 }
+
+.svg-holder{
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+svg polygon{
+	
+	stroke-dasharray: 250;
+	animation: dashoffset 1.5s linear infinite;
+}
+    
+@keyframes dashoffset{
+	to {
+		stroke-dashoffset: 500;
+    }
+}
