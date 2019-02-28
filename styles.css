@@ -319,3 +319,18 @@ svg polygon{
 		stroke-dashoffset: 500;
     }
 }
+
+.grad-svg{
+	background: linear-gradient(to right, #3ba9f4, #9fea63);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	transition: .2s;
+	transition-timing-function: ease-in;
+}
+
+.grad-svg:hover{
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
