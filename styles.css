@@ -134,7 +134,7 @@ html{
 	position: absolute;
 	border: 3px solid;
 	display: none;
-	top: 50px;
+	top: 10%;
 	border-radius: 5px;
 }
 .container{
