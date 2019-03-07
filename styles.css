@@ -198,6 +198,7 @@ html{
 	left: 0px;
 	top: 0px;
 	padding-left: 20px;
+	align-items:left;
 }
 
 .task-item{
@@ -223,18 +224,11 @@ html{
 }
 
 #userProfile{
-	right: 10%;
 	padding-right: 50px;
-	position: relative;
+	position: absolute;
 	float: left;
 	width: 300px;
 	left: 15%;
-}
-
-
-.dropdown{
-	position: relative;
-	display: inline-block;
 }
 
 .dropdown-content{
@@ -250,6 +244,11 @@ html{
 
 .dropdown:hover .dropdown-content{
 	display: block;
+}
+
+#date-container{
+	position: absolute;
+	left: 90%;
 }
 
 #manager{
@@ -378,3 +377,4 @@ button {
 a{
 	text-decoration: none;
 }
+

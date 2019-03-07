@@ -1,4 +1,5 @@
-
+console.log((new Date()).getFullYear());
+console.log(new Date());
 console.log("hello world");
 var colors = ["white", "blue", "yellow"];
 
@@ -17,6 +18,8 @@ function changeColor(x){
 			//document.getElementsByClassName("popup-header").style.backgroundColor = "white";
 		}
 }
+
+
 
 //the following functions could be condensed into one that takes in classes instead of ids and uses the this component
 
