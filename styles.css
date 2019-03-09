@@ -5,6 +5,14 @@ html{
 	overflow: hidden;
 }
 
+h4{
+		transition:all .2s ease-in-out;
+}
+
+h4:hover{
+	transform: scale(1.1);
+}
+
 #screen{
 	float: right;
 	position: absolute;
@@ -170,7 +178,7 @@ html{
 
 .pop-up:active{
 	z-index: 2;
-} 
+}
 
 .manager-items{
 	cursor: pointer;
@@ -198,15 +206,18 @@ html{
 	left: 0px;
 	top: 0px;
 	padding-left: 20px;
-	align-items:left;
 }
 
 .task-item{
 	position: absolute;
-	color:white;
+	color: transparent;
 	padding-bottom: 5px;
 	padding-left: 3px;
-	
+	background: linear-gradient(to bottom, white 80%, black);
+	background-clip: text;
+	-webkit-background-clip: text;
+	float: left;
+
 }
 
 .sub-title{
@@ -247,8 +258,11 @@ html{
 }
 
 #date-container{
-	position: absolute;
-	left: 90%;
+	position: relative;
+	float: right;
+	height: inherit;
+	padding-top: 5px;
+	padding-right: 30px;
 }
 
 #manager{
@@ -296,8 +310,8 @@ html{
 	bottom: 20px;
 	right: 10px;
 	color: black;
-	
-	
+
+
 }
 
 #about-manager{
@@ -319,11 +333,11 @@ html{
 }
 
 svg polygon{
-	
+
 	stroke-dasharray: 250;
 	animation: dashoffset 1.5s linear infinite;
 }
-    
+
 @keyframes dashoffset{
 	to {
 		stroke-dashoffset: 500;
@@ -353,7 +367,7 @@ svg circle{
 .grad-svg:hover{
   -ms-transform: scale(1.2); /* IE 9 */
   -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }
 
 button {
@@ -378,3 +392,34 @@ a{
 	text-decoration: none;
 }
 
+.fluid{
+	width: 100%;
+}
+
+.insta-Pic-container{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 5%;
+	width: 90%;
+	float: left;
+	color: white;
+	background: black;
+}
+
+.img-sum:hover{
+	transform: scale(1.1);
+}
+
+.insta-Pic{
+	width: 80%;
+	height: inherit;
+	object-fit: scale-down;
+}
+
+.img-sum{
+	transition:all .2s ease-in-out;
+	padding: 25px;
+	margin: auto;
+	width: 80%;
+}

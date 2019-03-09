@@ -19,6 +19,18 @@ function changeColor(x){
 		}
 }
 
+//changing the date to actually be the date
+
+
+$(document).ready(function() {
+  var interval = setInterval(function() {
+        var momentNow = moment();
+        $('#date-part').html(momentNow.format('YYYY MMMM DD') + ' '
+                            + momentNow.format('dddd')
+                             .substring(0,3).toUpperCase());
+        $('#time-part').html(momentNow.format('A hh:mm:ss'));
+	}, 1000);
+});
 
 
 //the following functions could be condensed into one that takes in classes instead of ids and uses the this component
@@ -88,7 +100,7 @@ dragElement(document.getElementById("contacts"));
 dragElement(document.getElementById("drawings"));
 dragElement(document.getElementById("about"));
 dragElement(document.getElementById("education"));
-  
+
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -130,7 +142,3 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
-
-
-
-
