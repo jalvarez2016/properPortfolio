@@ -424,3 +424,7 @@ a{
 	margin: auto;
 	width: 80%;
 }
+
+#time-part{
+	text-align: right;
+}
