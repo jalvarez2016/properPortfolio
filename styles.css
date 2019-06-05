@@ -104,7 +104,13 @@ h4:hover{
 	font-size: 18px;
 }
 
+#projects{
+	display: block;	
+	left: 50%;
+}
+
 #about{
+	display: block;
 	text-align: center;
 }
 
