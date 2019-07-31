@@ -35,65 +35,19 @@ $(document).ready(function() {
 
 //the following functions could be condensed into one that takes in classes instead of ids and uses the this component
 
-function showProjects(){
-	console.log("hi");
-	console.log(document.getElementById("projects"));
-	if(document.getElementById("projects").style.display === "block"){
+function showPopup(name){
+	//console.log(document.getElementById(name).style);
+	var popName = document.getElementById(name)
+	if( popName.style.display === "none" ){
 		console.log("block");
-		document.getElementById("projects").style.display = "none"
+		popName.style.display = "block";
+		popName.style.zIndex = 1;
 	} else {
-		console.log("none");
-		document.getElementById("projects").style.display = "block";
-	};
+		console.log("none")
+		popName.style.display ="none";
+	}
 }
 
-function showContacts(){
-	console.log("hi");
-	console.log(document.getElementById("contacts"));
-	if(document.getElementById("contacts").style.display === "block"){
-		console.log("block");
-		document.getElementById("contacts").style.display = "none"
-	} else {
-		console.log("none");
-		document.getElementById("contacts").style.display = "block";
-	};
-}
-
-function showDrawings(){
-	console.log("hi");
-	console.log(document.getElementById("drawings"));
-	if(document.getElementById("drawings").style.display === "block"){
-		console.log("block");
-		document.getElementById("drawings").style.display = "none"
-	} else {
-		console.log("none");
-		document.getElementById("drawings").style.display = "block";
-	};
-}
-
-function showAbout(){
-	console.log("hi");
-	console.log(document.getElementById("about"));
-	if(document.getElementById("about").style.display === "block"){
-		console.log("block");
-		document.getElementById("about").style.display = "none"
-	} else {
-		console.log("none");
-		document.getElementById("about").style.display = "block";
-	};
-}
-
-function showEducation(){
-	console.log("hi");
-	console.log(document.getElementById("education"));
-	if(document.getElementById("education").style.display === "block"){
-		console.log("block");
-		document.getElementById("education").style.display = "none"
-	} else {
-		console.log("none");
-		document.getElementById("education").style.display = "block";
-	};
-}
 
 dragElement(document.getElementById("projects"));
 dragElement(document.getElementById("contacts"));

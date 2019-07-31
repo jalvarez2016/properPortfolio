@@ -11,7 +11,7 @@
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-	
+
 	  gtag('config', 'UA-136929591-1');
 	</script>
 
@@ -53,47 +53,51 @@
 </div>
 
 <div id="screen">
-	<div class="screen-items" id="project-shortcut" onclick="showProjects()">
+	<div class="screen-items" id="project-shortcut" onclick="showPopup('projects')">
 		<img class="manager-image" src="./imgs/projectIcon.png">
 		<p class="sub-title">Projects</p>
 	</div>
-	<div class="screen-items" id="contacts-shortcut" onclick="showContacts()">
+	<div class="screen-items" id="contacts-shortcut" onclick="showPopup('contacts')">
 		<img class="manager-image" src="./imgs/contactIcon.png">
 		<p class="sub-title">Contact</p>
 	</div>
-	<div class="screen-items" id="drawings-shortcut" onclick="showDrawings()">
+	<div class="screen-items" id="drawings-shortcut" onclick="showPopup('drawings')">
 		<img class="manager-image" src="./imgs/drawingIcon.png">
 		<p class="sub-title">Drawings</p>
 	</div>
-	<div class="screen-items" id="about-shortcut" onclick="showAbout()">
+	<div class="screen-items" id="about-shortcut" onclick="showPopup('about')">
 		<img class="manager-image" src="./imgs/aboutIcon.png">
 		<p id="about-screen" class="sub-title">About</p>
 	</div>
-	<div class="screen-items" id="education-shortcut" onclick="showEducation()">
+	<div class="screen-items" id="education-shortcut" onclick="showPopup('education')">
 		<img class="manager-image" src="./imgs/educationIcon.png">
+		<p class="sub-title">Education</p>
+	</div>
+	<div class="screen-items" id="comment-shortcut" onclick="showPopup('comment')">
+		<img class="manager-image" src="./imgs/comment.png">
 		<p class="sub-title">Education</p>
 	</div>
 </div>
 
 
 <div id="manager">
-	<div class="manager-items" id="project-icon" onclick="showProjects()">
+	<div class="manager-items" id="project-icon" onclick="showPopup('projects')">
 		<img class="manager-image" src="./imgs/projectIcon.png">
 		<p class="manager-text">Projects</p>
 	</div>
-	<div class="manager-items" id="contacts-icon" onclick="showContacts()">
+	<div class="manager-items" id="contacts-icon" onclick="showPopup('contacts')">
 		<img class="manager-image" src="./imgs/contactIcon.png">
 		<p class="manager-text">Contacts</p>
 	</div>
-	<div class="manager-items" id="drawings-icon" onclick="showDrawings()">
+	<div class="manager-items" id="drawings-icon" onclick="showPopup('drawings')">
 		<img class="manager-image" src="./imgs/drawingIcon.png">
 		<p class="manager-text">Drawings</p>
 	</div>
-	<div class="manager-items" id="about-icon" onclick="showAbout()">
+	<div class="manager-items" id="about-icon" onclick="showPopup('about')">
 		<img class="manager-image" src="./imgs/aboutIcon.png">
 		<p id="about-manager" class="manager-text">About</p>
 	</div>
-	<div class="manager-items" id="education-icon" onclick="showEducation()">
+	<div class="manager-items" id="education-icon" onclick="showPopup('education')">
 		<img class="manager-image" src="./imgs/educationIcon.png">
 		<p class="manager-text">Education</p>
 	</div>
@@ -102,12 +106,12 @@
 <div class="pop-up" id="projects">
 
 	<div id="projectsheader" class="popup-header">Projects
-		<div class="close" onclick="showProjects()">X</div>
+		<div class="close" onclick="showPopup('projects')">X</div>
 	</div>
 
 	  <div class="container">
 	     <div class="item-container">
-	     	
+
 	     		<div class="portfolio-item">
                         <h4 class="text-center">Pong Da Money</h4>
                         <img class="thumbnail" src="https://rlv.zcache.com/aggressive_scary_in_your_face_ping_pong_paddle-r2717da90ba3c42d4a120624b8c111b39_zvmtp_540.jpg?rlvnet=1" class="img-responsive" alt="Cabin">
@@ -120,7 +124,7 @@
                             </a>
                         </div>
                 </div>
-	     	
+
  				<div class="portfolio-item">
                 	<h4 class="text-center">Hackthon Work</h4>
                 	<img class="thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTleXAmk5SPboIMDnz1fK_IqzhkVydnf1E-jYYCNj-ca0hX0VvtUQ" class="img-responsive" alt="Cabin">
@@ -133,7 +137,7 @@
                 	    </a>
                 	</div>
                 </div>
-                
+
                 <div class="portfolio-item">
                 	<h4 class="text-center">School Website</h4>
                 	<img class="thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1dnLdATRh4eubtUBlObEXlT4zrNweFdoXDDfdFFRnIf-b2Son" class="img-responsive" alt="Cabin">
@@ -262,7 +266,7 @@
 
 <div class="pop-up" id="contacts">
 	<div id="contactsheader" class="popup-header">Contacts
-		<div class="close" onclick="showContacts()">X</div>
+		<div class="close" onclick="showPopup('contacts')">X</div>
 	</div>
 		<div class="container">
 			<div class="item-container">
@@ -279,7 +283,7 @@
 					<p> Anyway, here is my contact info</p>
 					<a class="white" target="_blank" href="https://www.linkedin.com/in/jason-a-54a534156/"><p>Linked In</p></a>
 					<hr>
-					<a class="white" href="#" onclick="showProjects()"><p>Projects</p></a>
+					<a class="white" href="#" onclick="showPopup('projects')"><p>Projects</p></a>
 					<hr>
 					<p>E-mail : Jasonalvarezcoraiza@gmail.com</p>
 				</div>
@@ -289,7 +293,7 @@
 
 <div class="pop-up" id="drawings">
 	<div id="drawingsheader" class="popup-header">Drawings
-		<div class="close" onclick="showDrawings()">X</div>
+		<div class="close" onclick="showPopup('drawings')">X</div>
 	</div>
 		<div class="container">
 			<div class="item-container">
@@ -415,7 +419,7 @@
 
 <div class="pop-up" id="about">
 	<div id="aboutheader" class="popup-header">About
-		<div class="close" onclick="showAbout()">X</div>
+		<div class="close" onclick="showPopup('about')">X</div>
 	</div>
 		<div class="container">
 			<div class="item-container">
@@ -447,7 +451,7 @@
 
 <div class="pop-up" id="education">
 	<div id="educationheader"  class="popup-header">Education
-		<div class="close" onclick="showEducation()">X</div>
+		<div class="close" onclick="showPopup('education')">X</div>
 	</div>
 		<div class="container">
 			<div class="item-container">
@@ -467,6 +471,27 @@
 		</div>
 </div>
 
+<div class="pop-up" id="comment">
+	<div id="commentheader"  class="popup-header">Comment
+		<div class="close" onclick="showPopup('comment')">X</div>
+	</div>
+		<div class="container">
+			<div class="item-container">
+				<div id="comment-heading">
+					<h1>Send me a message</h1>
+				</div>
+				<div id="comment-body">
+					<h2> Name </h2>
+					<input id="senderName" />
+					<h2> Message </h2>
+					<textarea id="userComment">
+
+					</textarea>
+				</div>
+			</div>
+
+		</div>
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
