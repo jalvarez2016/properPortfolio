@@ -23,8 +23,8 @@ function changeColor(x){
 
 
 $(document).ready(function() {
-  document.getElementById("projects").style.display === "block";
-  document.getElementById("about").style.display === "block";
+  document.getElementById("projects").style.display = "block";
+  document.getElementById("about").style.display = "block";
   var interval = setInterval(function() {
         var momentNow = moment();
         $('#date-part').html(momentNow.format('YYYY MMMM DD') + ' '
